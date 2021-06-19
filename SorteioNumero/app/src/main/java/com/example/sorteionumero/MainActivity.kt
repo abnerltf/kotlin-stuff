@@ -5,6 +5,7 @@ import android.os.Bundle
 
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast
 import java.util.Random;
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,11 @@ class MainActivity : AppCompatActivity() {
 
         var numeroSorteado = Random().nextInt(11)
 
-        texto.setText("O número é: $numeroSorteado")
+        texto.setText("O número é: $numeroSorteado");
+        notifyRoll()
+    }
+
+    private fun notifyRoll() {
+        Toast.makeText(this, "Número gerado", Toast.LENGTH_LONG).show()
     }
 }
