@@ -17,7 +17,7 @@ class SecondActivity : AppCompatActivity() {
 
         val usuario = intent.extras?.get("USUARIO") as Usuario
 
-        listaUsuario.add(usuario)
+        listaUsuario.add("${usuario.nome}, ${usuario.idade}")
 
         textgrid.text = listaUsuario.toString()
 
@@ -25,6 +25,6 @@ class SecondActivity : AppCompatActivity() {
     }
 
     companion object{
-        val listaUsuario = mutableListOf<Usuario>()
+        val listaUsuario = mutableListOf<String>()
     }
 }
