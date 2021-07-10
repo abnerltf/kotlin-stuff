@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobre"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="148dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnFormacao"/>
+
+    <Button
+        android:id="@+id/btnFormacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formacao"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="284dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSobre"
+        app:layout_constraintBottom_toTopOf="@id/btnExperiencia"/>
+
+    <Button
+        android:id="@+id/btnExperiencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experiencia"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="441dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFormacao"
+        app:layout_constraintBottom_toTopOf="@id/btnObjetivo"/>
+
+    <Button
+        android:id="@+id/btnObjetivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Objetivo"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="538dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnExperiencia"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
